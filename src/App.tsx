@@ -48,7 +48,7 @@ interface Translations {
 const translations: Translations = {
   vi: {
     nav: {
-      about: 'Giới thiệu ',
+      about: 'Giới thiệu',
       projects: 'Dự án',
       contact: 'Liên hệ'
     },
