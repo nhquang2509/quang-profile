@@ -48,7 +48,7 @@ interface Translations {
 const translations: Translations = {
   vi: {
     nav: {
-      about: 'Giới thiệu 1',
+      about: 'Giới thiệu ',
       projects: 'Dự án',
       contact: 'Liên hệ'
     },
@@ -61,7 +61,7 @@ const translations: Translations = {
       title: 'Giới thiệu',
       description: 'Tôi là một sinh viên Công nghệ Thông tin tận tâm tại Trường Đại học Đà Lạt, chuyên ngành Kỹ thuật Phần mềm. Đam mê của tôi là phát triển các giải pháp phần mềm sáng tạo và luôn cập nhật với các công nghệ mới nổi.',
       journey: {
-        title: 'Hành Trình Của Tôi – Nguyễn Hữu Quang',
+        title: 'Hành Trình Của Tôi',
         content: 'Tôi là Nguyễn Hữu Quang, sinh viên năm cuối ngành Công nghệ Thông tin, chuyên ngành Kỹ thuật phần mềm. Từ khi còn học phổ thông, tôi đã có đam mê với lập trình và công nghệ.\n\nTrong quá trình học đại học, tôi đã tham gia nhiều dự án như hệ thống quản lý khách sạn, phần mềm bán hàng, sử dụng các công nghệ như Java, SQL Server, ReactJS và Node.js. Tôi cũng từng thực tập tại một công ty startup, nơi tôi được tiếp cận quy trình phát triển phần mềm thực tế theo mô hình Agile.\n\nTôi luôn nỗ lực học hỏi, yêu thích làm việc nhóm và mong muốn phát triển sự nghiệp trong vai trò lập trình viên full-stack trong thời gian tới.'
       }
     },
@@ -97,7 +97,7 @@ const translations: Translations = {
       title: 'About Me',
       description: 'I am a dedicated Information Technology student at Dalat University, specializing in Software Engineering. My passion lies in developing innovative software solutions and staying updated with emerging technologies.',
       journey: {
-        title: 'My Journey – Nguyen Huu Quang',
+        title: 'My Journey',
         content: 'I am Nguyen Huu Quang, a final-year Information Technology student specializing in Software Engineering. Since high school, I have been passionate about programming and technology.\n\nDuring my university studies, I have participated in various projects such as hotel management systems and sales software, using technologies like Java, SQL Server, ReactJS, and Node.js. I also interned at a startup company where I was exposed to real-world software development processes following the Agile methodology.\n\nI am always eager to learn, enjoy teamwork, and aspire to develop my career as a full-stack developer in the near future.'
       }
     },
@@ -408,10 +408,10 @@ function App() {
 
             {/* Skills Section - 4 phần trong 1 card */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-center bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                {t.skills.title}
-              </h3>
               <div className={`p-6 rounded-xl shadow-lg ${isDarkMode ? 'bg-gray-900' : 'bg-white'} hover:shadow-xl transition-shadow duration-300`}>
+                <h3 className="text-2xl font-bold text-center mb-6 bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
+                  {t.skills.title}
+                </h3>
                 {/* Programming */}
                 <h4 className="text-lg font-semibold mb-2 text-blue-600">{t.skills.programming}</h4>
                 <div className="flex flex-wrap gap-2 mb-4">
