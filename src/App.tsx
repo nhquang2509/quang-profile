@@ -406,67 +406,59 @@ function App() {
               </div>
             </div>
 
-            {/* Skills Section */}
+            {/* Skills Section - 4 phần trong 1 card */}
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-center bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
                 {t.skills.title}
               </h3>
-              
-              <div className="space-y-6">
-                <div className={`p-6 rounded-xl shadow-lg ${isDarkMode ? 'bg-gray-900' : 'bg-white'} hover:shadow-xl transition-shadow duration-300`}>
-                  <h4 className="text-lg font-semibold mb-4 text-blue-600">{t.skills.programming}</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {skillCategories.programming.map((skill) => (
-                      <span
-                        key={skill}
-                        className={`px-3 py-1 text-sm rounded-full ${isDarkMode ? 'bg-gray-800 text-gray-300' : 'bg-gray-100 text-gray-700'} hover:bg-blue-100 hover:text-blue-800 transition-colors duration-200`}
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
+              <div className={`p-6 rounded-xl shadow-lg ${isDarkMode ? 'bg-gray-900' : 'bg-white'} hover:shadow-xl transition-shadow duration-300`}>
+                {/* Programming */}
+                <h4 className="text-lg font-semibold mb-2 text-blue-600">{t.skills.programming}</h4>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {skillCategories.programming.map((skill) => (
+                    <span
+                      key={skill}
+                      className={`px-3 py-1 text-sm rounded-full ${isDarkMode ? 'bg-gray-800 text-gray-300' : 'bg-gray-100 text-gray-700'} hover:bg-blue-100 hover:text-blue-800 transition-colors duration-200`}
+                    >
+                      {skill}
+                    </span>
+                  ))}
                 </div>
-
-                <div className={`p-6 rounded-xl shadow-lg ${isDarkMode ? 'bg-gray-900' : 'bg-white'} hover:shadow-xl transition-shadow duration-300`}>
-                  <h4 className="text-lg font-semibold mb-4 text-purple-600">{t.skills.technologies}</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {skillCategories.technologies.map((skill) => (
-                      <span
-                        key={skill}
-                        className={`px-3 py-1 text-sm rounded-full ${isDarkMode ? 'bg-gray-800 text-gray-300' : 'bg-gray-100 text-gray-700'} hover:bg-purple-100 hover:text-purple-800 transition-colors duration-200`}
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
+                {/* Technologies */}
+                <h4 className="text-lg font-semibold mb-2 text-purple-600">{t.skills.technologies}</h4>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {skillCategories.technologies.map((skill) => (
+                    <span
+                      key={skill}
+                      className={`px-3 py-1 text-sm rounded-full ${isDarkMode ? 'bg-gray-800 text-gray-300' : 'bg-gray-100 text-gray-700'} hover:bg-purple-100 hover:text-purple-800 transition-colors duration-200`}
+                    >
+                      {skill}
+                    </span>
+                  ))}
                 </div>
-
-                <div className={`p-6 rounded-xl shadow-lg ${isDarkMode ? 'bg-gray-900' : 'bg-white'} hover:shadow-xl transition-shadow duration-300`}>
-                  <h4 className="text-lg font-semibold mb-4 text-indigo-600">{t.skills.databases}</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {skillCategories.databases.map((skill) => (
-                      <span
-                        key={skill}
-                        className={`px-3 py-1 text-sm rounded-full ${isDarkMode ? 'bg-gray-800 text-gray-300' : 'bg-gray-100 text-gray-700'} hover:bg-indigo-100 hover:text-indigo-800 transition-colors duration-200`}
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
+                {/* Databases */}
+                <h4 className="text-lg font-semibold mb-2 text-indigo-600">{t.skills.databases}</h4>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {skillCategories.databases.map((skill) => (
+                    <span
+                      key={skill}
+                      className={`px-3 py-1 text-sm rounded-full ${isDarkMode ? 'bg-gray-800 text-gray-300' : 'bg-gray-100 text-gray-700'} hover:bg-indigo-100 hover:text-indigo-800 transition-colors duration-200`}
+                    >
+                      {skill}
+                    </span>
+                  ))}
                 </div>
-
-                <div className={`p-6 rounded-xl shadow-lg ${isDarkMode ? 'bg-gray-900' : 'bg-white'} hover:shadow-xl transition-shadow duration-300`}>
-                  <h4 className="text-lg font-semibold mb-4 text-green-600">{t.skills.other}</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {skillCategories.other.map((skill) => (
-                      <span
-                        key={skill}
-                        className={`px-3 py-1 text-sm rounded-full ${isDarkMode ? 'bg-gray-800 text-gray-300' : 'bg-gray-100 text-gray-700'} hover:bg-green-100 hover:text-green-800 transition-colors duration-200`}
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
+                {/* Other */}
+                <h4 className="text-lg font-semibold mb-2 text-green-600">{t.skills.other}</h4>
+                <div className="flex flex-wrap gap-2">
+                  {skillCategories.other.map((skill) => (
+                    <span
+                      key={skill}
+                      className={`px-3 py-1 text-sm rounded-full ${isDarkMode ? 'bg-gray-800 text-gray-300' : 'bg-gray-100 text-gray-700'} hover:bg-green-100 hover:text-green-800 transition-colors duration-200`}
+                    >
+                      {skill}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
